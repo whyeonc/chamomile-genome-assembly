@@ -4,7 +4,7 @@ projectdir="/filer-dg/agruppen/dg2/cho/chamomile"
 
 #Index construction
 
-fasta='/filer-dg/agruppen/dg2/cho/chamomile/chamomile.p_utg.fasta'
+fasta='/filer-dg/agruppen/dg2/cho/chamomile/diploid/phased_assembly/assembly/chamomile/chamomile2.hic.p_utg.fa'
 gmap_build='/opt/Bio/gmap/2019-09-12/bin/gmap_build'
 dir=$fasta:h'/gmap_index'
 name=${fasta:t:r}
@@ -16,7 +16,7 @@ gmap_build='/opt/Bio/gmap/2019-09-12/bin/gmap_build'
 dir=$fasta:h'/gmap_index'
 name=${fasta:t:r}
 threads=50
-query='/filer-dg/agruppen/dg2/cho/chamomile/guide_map/c_makinoi_chr.fa'
+query='/filer-dg/agruppen/dg2/cho/chamomile/diploid/phased_assembly/guide_map/pseudomolecules_v1.fa'
 prefix="${name}"
 
 $gmapl -d $name -D $dir -t $threads -f 2 $query > ${prefix}.gff 2> ${prefix}.err  
