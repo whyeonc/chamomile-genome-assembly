@@ -16,7 +16,7 @@ gmap_build='/opt/Bio/gmap/2019-09-12/bin/gmap_build'
 dir=$fasta:h'/gmap_index'
 name=${fasta:t:r}
 threads=50
-query='/filer-dg/agruppen/dg2/cho/chamomile/diploid/phased_assembly/guide_map/pseudomolecules_v1.fa'
+query='/filer-dg/agruppen/dg2/cho/chamomile/diploid/phased_assembly/guide_map/pseudomolecules_v3_singlecopy_100bp.fasta'
 prefix="${name}"
 
 $gmapl -d $name -D $dir -t $threads -f 2 $query > ${prefix}.gff 2> ${prefix}.err  
